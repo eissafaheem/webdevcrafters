@@ -61,7 +61,7 @@ function handleOnDOMLoad() {
     parallax.addEventListener('mousemove', (e) => {
         const parallaxImage1 = document.querySelector('.fireflies1');
         const parallaxImage2 = document.querySelector('.fireflies2');
-        const brandName = document.querySelector('.brand-name');
+        // const brandName = document.querySelector('.brand-name');
         console.log("object")
         const xAxis1 = (window.innerWidth / 2 - e.pageX) / 25;
         const yAxis1 = (window.innerHeight / 2 - e.pageY) / 25;
@@ -72,7 +72,7 @@ function handleOnDOMLoad() {
 
         parallaxImage1.style.transform = `translate(${xAxis1}px, ${yAxis1}px)`;
         parallaxImage2.style.transform = `translate(${xAxis2}px, ${yAxis2}px)`;
-        brandName.style.transform = `translate(${xAxis3}px, ${yAxis3}px)`;
+        // brandName.style.transform = `translate(${xAxis3}px, ${yAxis3}px)`;
     });
 }
 
